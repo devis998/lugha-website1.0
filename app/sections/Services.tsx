@@ -78,7 +78,13 @@ export default function Services() {
   )
 }
 
-function ServiceCard({ icon, title, desc }) {
+type ServiceCardProps = {
+  icon: React.ReactNode;
+  title: string;
+  desc: string;
+};
+
+function ServiceCard({ icon, title, desc }: ServiceCardProps) {
   return (
     <div className="bg-blue-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
       <div className="flex justify-center items-center mb-4">
