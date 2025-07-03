@@ -44,11 +44,12 @@ export default function Hero() {
         </p>
 
         <a
-          href="#quote"
-          className="inline-block bg-lugha-coral text-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-lugha-coral transition shadow-md"
+        href="#quote"
+        className="inline-block backdrop-blur-sm bg-white/10 text-white border border-white/30 px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-lugha-navy hover:shadow-xl transition duration-300"
         >
-          Get a Quote
+        Get a Quote
         </a>
+
       </div>
     </section>
   )
