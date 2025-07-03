@@ -11,7 +11,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative min-h-screen bg-lugha-navy flex flex-col items-center justify-center px-6 md:px-20 py-24 overflow-hidden text-center font-sans">
+    <section className="relative min-h-screen bg-lugha-navy flex flex-col items-center justify-center px-6 md:px-20 pt-36 pb-20 overflow-hidden text-center font-sans">
       
       {/* 🌌 BACKGROUND GLOW or IMAGE */}
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-lugha-navy via-[#1E2A55] to-black opacity-90" />
