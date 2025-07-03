@@ -13,7 +13,7 @@ export function About() {
   }, []);
 
   return (
-    <section id="about" className="py-24 bg-white text-lugha-ink font-sans">
+    <section id="about" className="py-12 bg-white text-lugha-ink font-sans">
   <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
     <UsersIcon className="h-10 w-10 text-lugha-teal mx-auto mb-4" />
     <h2 className="text-4xl font-bold text-lugha-navy mb-6">Who We Are</h2>
