@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./app/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -13,12 +12,17 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['Helvetica Neue', 'Arial', 'sans-serif'],
+        sans: ['Inter', 'Arial', 'sans-serif'], // Updated brand font
       },
       colors: {
         lugha: {
-          primary: '#2C3E70',
-          accent: '#A1B6DA',
+          navy: '#2C3E70',        // Primary Brand Color
+          mist: '#E9EEF6',        // Background or Light Accent
+          white: '#FFFFFF',       // Clean Canvas
+          coral: '#F36B6B',       // Warm CTA / Emotional Accent
+          teal: '#14B8A6',        // Cool Accent / Buttons
+          gold: '#F5A623',        // Highlight / Borders
+          ink: '#222831',         // Text & Icon Base
         },
       },
     },
