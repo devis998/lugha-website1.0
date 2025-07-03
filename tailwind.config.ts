@@ -2,15 +2,17 @@ module.exports = {
   content: ["./app/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      animation: {
-        scroll: 'scroll 20s linear infinite',
-      },
-      keyframes: {
-        scroll: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(-100%)' },
-        },
-      },
+  animation: {
+    scroll: 'scroll 25s linear infinite',
+  },
+  keyframes: {
+    scroll: {
+      '0%': { transform: 'translateX(100%)' },
+      '100%': { transform: 'translateX(-100%)' },
+    },
+  },
+},
+
       fontFamily: {
         sans: ['Inter', 'Arial', 'sans-serif'], // Updated brand font
       },
