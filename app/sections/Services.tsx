@@ -9,7 +9,7 @@ import {
   ClipboardDocumentListIcon
 } from '@heroicons/react/24/outline';
 
-export function Services() {
+export default function Services() {
   return (
     <section id="services" className="py-20 bg-lugha-mist text-center font-sans">
       <div className="max-w-6xl mx-auto px-6 md:px-12">
@@ -48,7 +48,7 @@ function ServiceCard({ icon, title, desc }: ServiceCardProps) {
         </div>
       </div>
       <h3 className="text-lg font-semibold text-lugha-navy mb-2">{title}</h3>
-      <p className="text-gray-600 text-sm leading-relaxed">{desc}</p>
+      <p className="text-lugha-ink text-sm leading-relaxed">{desc}</p>
     </div>
   );
 }
