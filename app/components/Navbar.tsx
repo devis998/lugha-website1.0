@@ -7,11 +7,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 font-sans w-[95%] max-w-6xl bg-lugha-navy text-white rounded-full shadow-lg px-6 py-2 backdrop-blur-md">
-      <div className="flex items-center justify-between h-14">
-
-        {/* LOGO */}
-        <a href="/" className="pl-2">
+    <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-7xl px-6 py-3 bg-white/80 text-[#2C3E70] backdrop-blur-md rounded-full shadow-lg font-sans">
+      <div className="flex items-center justify-between">
+        {/* Logo */}
+        <a href="/">
           <Image
             src="/lugha-logo.png"
             alt="Lugha Logo"
@@ -21,8 +20,8 @@ export default function Navbar() {
           />
         </a>
 
-        {/* NAV LINKS */}
-        <div className="hidden md:flex items-center space-x-6 text-sm font-medium tracking-wide">
+        {/* Nav Links - Desktop */}
+        <div className="hidden md:flex gap-6 text-sm font-medium tracking-wide">
           {[
             'services', 'about', 'testimonials', 'clients', 'partners',
             'languages', 'careers', 'blog', 'contact'
@@ -30,16 +29,16 @@ export default function Navbar() {
             <a
               key={link}
               href={`#${link}`}
-              className="relative text-white hover:text-lugha-coral transition duration-200 after:content-[''] after:block after:w-0 after:h-[2px] after:bg-lugha-coral after:transition-all after:duration-300 hover:after:w-full"
+              className="relative hover:text-lugha-coral transition duration-200 after:content-[''] after:block after:w-0 after:h-[2px] after:bg-lugha-coral after:transition-all after:duration-300 hover:after:w-full"
             >
               {link.charAt(0).toUpperCase() + link.slice(1)}
             </a>
           ))}
         </div>
 
-        {/* HAMBURGER (MOBILE) */}
-        <div className="md:hidden pr-2">
-          <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none">
+        {/* Hamburger - Mobile */}
+        <div className="md:hidden">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-[#2C3E70] focus:outline-none">
             {isOpen ? (
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
@@ -53,9 +52,9 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* MOBILE MENU */}
+      {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden mt-2 bg-lugha-navy/90 rounded-xl py-4 px-6 text-center text-white font-medium space-y-2">
+        <div className="md:hidden mt-3 space-y-2 text-center text-sm font-medium">
           {[
             'services', 'about', 'testimonials', 'clients', 'partners',
             'languages', 'careers', 'blog', 'contact'
@@ -63,7 +62,7 @@ export default function Navbar() {
             <a
               key={link}
               href={`#${link}`}
-              className="block hover:text-lugha-coral transition"
+              className="block text-[#2C3E70] hover:text-lugha-coral transition"
             >
               {link.charAt(0).toUpperCase() + link.slice(1)}
             </a>
